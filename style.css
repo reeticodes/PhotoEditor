@@ -39,7 +39,7 @@ h1 {
   display: flex;
   flex: 1;
   width: 100vw;
-
+  justify-content: center;
   flex-direction: row;
 }
 .sidebar {
