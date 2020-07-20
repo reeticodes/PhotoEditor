@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+
+:root {
+  --blur: 0px;
+  --bright: 100%;
+  --grayscale: 0%;
+  --huerotate: 0deg;
+  --contrast: 100%;
+  --saturate: 100%;
+  --sepia: 0%;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+
+nav {
+  background: rgb(132, 132, 132);
+  background: #ffdb0f;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 2px;
+  font-size: 20px;
+  width: 100%;
+}
+h1 {
+  font-size: 30px;
+  background-color: #645452;
+  display: inline-block;
+  color: white;
+  padding: 18px;
+  font-family: "Rubik Mono One", sans-serif;
+}
+.main {
+  display: flex;
+  flex: 1;
+  width: 100vw;
+
+  flex-direction: row;
+}
+.sidebar {
+  float: left;
+  background-color: #645452;
+  width: 40vw;
+  height: 80vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: "Crimson Text", serif;
+}
+.edit-sec {
+  background-color: white;
+  width: 55vw;
+  height: 80vh;
+  text-align: center;
+}
+
+.opt {
+  display: block;
+  list-style-type: none;
+  padding: 10px;
+  border-bottom-style: groove;
+  line-height: 36px;
+  padding: 20px;
+}
+span {
+  background-color: #ffdb0f;
+  font-family: "Rubik Mono One", sans-serif;
+  color: black;
+  text-align: center;
+  display: inline-block;
+  margin-right: 30px;
+  width: 80px;
+  height: 10%;
+  padding: 7px;
+  font-size: 10px;
+  text-transform: lowercase;
+}
+.inp {
+  -webkit-appearance: none;
+  width: 150px;
+  height: 10px;
+  border-radius: 10px;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.inp::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffdb0f;
+  cursor: pointer;
+}
+img {
+  width: 50vw;
+  height: 80vh;
+  -webkit-filter: brightness(var(--bright)) blur(var(--blur))
+    contrast(var(--contrast)) grayscale(var(--grayscale))
+    saturate(var(--saturate)) sepia(var(--sepia)) hue-rotate(var(--huerotate));
+}
+.sidebar::-webkit-scrollbar {
+  width: 1em;
+  height: 20px;
+}
+.sidebar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #ffdb0f;
+  height: 50px;
+
+  outline: 1px solid slategrey;
+}
+.sidebar::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 30px;
+}
+#choosefile {
+  text-align: right;
+  display: block;
+  width: 100%;
+  border: solid 1px white;
+  padding: 10px;
+  color: black;
+  background: #ffdb0f;
+}
+
+#choosefile {
+  padding: 5px 10px;
+  border: 1px solid;
+  position: relative;
+  color: #fff;
+  padding: 15px;
+  border-radius: 2px;
+  text-align: center;
+  float: right;
+  cursor: pointer;
+}
+#inpimg {
+  border: solid 3px #645452;
+  position: absolute;
+  cursor: pointer;
+  margin: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  font-size: 24px;
+  width: 100%;
+}
